@@ -1,0 +1,606 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Larsseit";
+  font-weight: lighter;
+  overflow-x: hidden;
+  font-size: 62.5%;
+  position: relative;
+}
+main {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* NAVIGATION BAR */
+.slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: bisque;
+  transform: translateY(100%);
+}
+.product__img {
+  transform: translateX(5rem);
+}
+.nav {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav.scrolled {
+  background-color: #fff !important;
+  transition: background-color 300ms linear;
+}
+
+.menu-open {
+  position: absolute;
+  line-height: 65px;
+  font-size: 3rem;
+  left: 1em;
+}
+
+.brand span a {
+  position: absolute;
+  line-height: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+.brand a:hover {
+  text-decoration: none;
+}
+
+.cart {
+  position: absolute;
+  line-height: 65px;
+  right: 1.4em;
+  font-size: 3rem;
+
+  font-weight: 300;
+}
+
+/* MENU */
+
+.menu {
+  position: fixed;
+  z-index: 2;
+  width: 30%;
+  /* left: -30%; */
+  height: 100vh;
+  clip-path: circle(0px at 0% 0%);
+  background: #fff;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.icon-sideNavClose {
+  font-size: 3rem;
+  position: absolute;
+  right: 2rem;
+  top: 3rem;
+}
+@media (max-width: 900px) {
+  .menu {
+    width: 100%;
+    left: -100%;
+  }
+}
+
+.menu-close {
+  position: relative;
+  line-height: 60px;
+  float: right;
+  margin-right: 20px;
+}
+
+.menu__links {
+  width: 90%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.menu ul li a {
+  font-size: 26px;
+}
+.social {
+  position: absolute;
+  left: 12%;
+  bottom: 10%;
+}
+.social ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+.icon-social {
+  font-size: 3rem;
+}
+
+.menu ul li a:hover {
+  text-decoration: none;
+}
+
+.media-menu {
+  position: relative;
+  top: 50%;
+}
+
+.media-menu ul li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  height: 100vh;
+}
+
+.hero-left {
+  height: 100vh;
+  background: #f7f6f2;
+  z-index: -1;
+  transform-origin: left center;
+}
+
+a {
+  color: grey !important;
+  font-family: "Larsseit";
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.heading--1 {
+  margin-top: 2rem;
+  margin-left: 20rem;
+}
+.heading--1 h1 {
+  width: 150%;
+  overflow: hidden;
+}
+.heading--1 h1 span {
+  display: inline-block;
+  font-family: "Larsseit";
+  font-size: 7.2rem;
+  transform: translateY(100%);
+}
+.shipping {
+  position: absolute;
+  bottom: 30px;
+  margin-left: 40px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.hero-image {
+  position: absolute;
+  top: 70%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 40rem;
+  overflow: hidden;
+}
+.heroImage-overlay {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 140%;
+  height: 130%;
+  background-color: #fff;
+}
+img {
+  width: 100%;
+}
+
+/* Defining general properties for media icons used across the template */
+
+.media {
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  margin-right: 20px;
+}
+
+.media ul {
+  list-style: none;
+}
+
+.media ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.icon {
+  font-size: 3rem;
+}
+@media (max-width: 900px) {
+  .hero-image {
+    display: none;
+  }
+
+  .media {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .media ul {
+    margin-right: 0;
+  }
+}
+
+/* SECTON BASIC */
+
+.section {
+  padding: 80px 0px;
+}
+
+/* PRODUCT / BANNER SEC */
+.flex {
+  margin: 10rem 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+.prod {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+}
+.prod--a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prod:hover a {
+  text-decoration: none !important;
+}
+.prod img {
+  padding: 2rem 0;
+  transition: transform 0.4s;
+  height: 30rem;
+  width: 20rem;
+  border-radius: 1rem;
+}
+.prod img:hover {
+  transform: skewY(-15deg) scale(1.07);
+}
+#prod-desc {
+  margin-top: 16px;
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.prod-sec {
+  width: 101%;
+}
+
+.prod-sec p {
+  font-family: "Playfair Display";
+  font-size: 60px;
+  font-weight: 400;
+  width: 140%;
+}
+
+@media (max-width: 900px) {
+  .prod-sec {
+    padding-left: 30px;
+    width: 100%;
+    border: none;
+  }
+
+  .prod-sec a {
+    display: none;
+  }
+}
+
+#price {
+  font-family: "Larsseit";
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.prod-list #prod-desc {
+  font-family: "Larsseit";
+  color: grey;
+}
+
+.text-shop {
+  font-size: 60px;
+  margin-bottom: 4rem;
+  font-family: "PlayFair";
+}
+.learnmore__link {
+  font-size: 20px;
+  border: 1px solid gray;
+  padding: 1rem 2.6rem;
+  transition: all 0.5s ease;
+}
+.learnmore__link:hover {
+  background-color: rgb(38, 38, 38);
+  text-decoration: none;
+}
+.cards {
+  margin: 10vh 0;
+  margin-left: 40rem;
+}
+.inner-card-slider {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 43%;
+  overflow-x: scroll;
+}
+.inner-card-slider::-webkit-scrollbar {
+  height: 0;
+}
+.card {
+  margin: 0 2rem;
+  border-radius: 2rem;
+}
+#card-count {
+  position: absolute;
+  font-size: 6rem;
+  bottom: 0;
+  left: 5%;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+/* FOOTER */
+
+.footer {
+  padding: 30px 0;
+  background: #f7f6f2;
+}
+
+.block {
+  margin-top: 40px;
+}
+
+.footer .media {
+  top: 20px !important;
+}
+
+footer p {
+  text-align: center;
+  font-family: "Larsseit" !important;
+  font-size: 2rem;
+}
+
+/* SHOP Page */
+
+.whitespaces {
+  height: 100px;
+}
+
+.collection {
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.collection #heading {
+  font-family: "Playfair Display";
+  font-size: 20px;
+  margin-left: 50px;
+  padding-bottom: 0;
+  position: relative;
+  display: inline-block;
+}
+
+#heading::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #ece1b6;
+}
+
+.collection .section {
+  margin: -50px 0;
+}
+
+/* PRODUCT PAGE */
+
+.product-sec {
+  padding-top: 60px;
+  height: 100vh;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 900px) {
+  .product-sec {
+    margin-bottom: 140px;
+    border-bottom: none !important;
+  }
+}
+
+.prod-left {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.prod-opt {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+#prod-name {
+  font-family: "Playfair Display";
+}
+
+.prod-opt #price {
+  padding: 16px 0;
+}
+
+.input-helper {
+  position: relative;
+  display: inline-block;
+  font-family: "Larsseit";
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+
+.input-helper:before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.input-helper--radio {
+  padding-left: 18px;
+}
+
+.input-helper--radio:before {
+  top: 2px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #222;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label:before {
+  background: #222;
+}
+
+.product-sec ::placeholder,
+input {
+  font-family: "Larsseit";
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 10px;
+  letter-spacing: 4px;
+  padding-left: 10px;
+  padding-bottom: 3px;
+}
+
+.product-sec input {
+  width: 130px;
+}
+
+@media (max-width: 900px) {
+  .product-sec .hero-image {
+    margin-top: 50%;
+    display: block !important;
+    height: 100vh;
+  }
+
+  .prod-opt {
+    padding-top: 300px;
+  }
+}
+
+.add-prod {
+  margin: 50px 0;
+}
+
+.add-prod a {
+  padding: 20px 40px;
+  background: #000;
+  font-weight: 300;
+  letter-spacing: 4px;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.add-prod a:hover {
+  text-decoration: none;
+}
+
+/* ABOUT PAGE */
+
+.hero {
+  height: 400px;
+  background: #f7f6f2;
+  position: relative;
+}
+
+#hero-title {
+  position: absolute;
+  font-family: "Playfair Display";
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content {
+  margin: 50px 0;
+  width: 65% !important;
+}
+
+@media (max-width: 900px) {
+  .content {
+    width: 90% !important;
+  }
+}
+
+.content p {
+  font-family: "Larsseit";
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+#blockquote {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-size: 24px;
+  padding: 30px 20px;
+  margin: 20px 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* CONTACT */
+
+form label,
+textarea {
+  font-family: "Larsseit";
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.form-control {
+  box-shadow: none !important;
+}
+
+form input,
+textarea {
+  border-radius: 0% !important;
+}
+
+form input:focus,
+textarea:focus {
+  outline: none !important;
+  border: 2px solid #000 !important;
+}

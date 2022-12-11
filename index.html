@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="harrnish - ig@harrnish" />
+    <link rel="icon" href="yourIconUrl" type="image/gif" sizes="16x16" />
+    <title>wordoutlet - The store designed by Codegrid</title>
+
+    <!-- external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- bootstrapcdn -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- icon pack -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- google font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <!-- tweenmax (greensock) cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <!-- for on scroll animations -->
+  </head>
+  <body data-barba="wrapper">
+     <!-- NAVIGATION STARTS -->
+
+     <div class="nav">
+      <div class="menu-open">
+        <ion-icon class="icon-sideNav" name="menu"></ion-icon>
+      </div>
+      <div class="brand">
+        <span><a href="index.html">wordoutlet</a></span>
+      </div>
+      <div class="cart">
+        <ion-icon name="cart"></ion-icon>
+      </div>
+      <div class="menu">
+        <div class="menu-close">
+          <ion-icon class="icon-sideNavClose" name="close"></ion-icon>
+        </div>
+        <ul class="menu__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">collection</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="about.html">Our story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="social">
+          <ul>
+            <li><ion-icon  class="icon-social" name="logo-facebook"></ion-icon></li>
+            <li><ion-icon class="icon-social" name="logo-instagram"></ion-icon></li>
+            <li><ion-icon class="icon-social" name="logo-twitter"></ion-icon></li>
+            <li><ion-icon class="icon-social" name="logo-pinterest"></ion-icon></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVIGATION ENDS -->
+<main data-barba="container" data-barba-namespace="home">  
+    <div class="my-container">
+     
+      <!-- HERO SECTION STARTS -->
+
+      <div class="hero-section">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 hero-left">
+              <div class="heading--1">
+                <h1><span>T</span><span>H</span><span>E</span><span></h1>
+                <h1>
+                  <span>B</span><span>E</span><span>S</span><span>T</span
+                  >
+                </h1> 
+                <h1>
+                  <span>H</span><span>A</span><span>N</span><span>D</span
+                  ><span>W</span><span>R</span><span>I</span><span>T</span><span>I</span><span>N</span><span>G</span>
+                </h1> 
+                <h1>
+                  <span>Y</span><span>O</span><span>U</span> <span>W</span><span>I</span><span>L</span><span>L</span>
+                </h1> 
+               
+                <h1>
+                  <span>E</span><span>V</span><span>E</span><span>R</span
+                  >
+                </h1> 
+                <h1>
+                  <span>W</span><span>R</span><span>I</span><span>T</span
+                  > <span>E</span>
+                </h1> 
+                   </div>  
+            
+            </div>
+
+            <div class="col-lg-6 hero-right">
+              <div class="hero-image">
+                <img
+                  src="images/hero.jpg"
+                  class="img img--hero"
+                  data-wow-delay="0.3s"
+                  alt=""
+                />
+                <div class="heroImage-overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO SECTION ENDS -->
+
+      <!-- PRODUCT LIST STARTS -->
+
+      <div class="section prod-list">
+          <div class="flex">
+            <div class=" prod " >
+              <a class="prod--a" href="product.html">
+                <p id="price">USD $20.00</p>
+                <img src="images/prod-04.jpg" alt="" />
+                <p id="prod-desc">Daily Planner 2017 in Green</p>
+              </a>
+            </div>
+            <div class=" prod " >
+              <a class="prod--a" href="product.html">
+                <p id="price">USD $30.00</p>
+                <img src="images/prod-05.jpg" alt="" />
+                <p id="prod-desc">Daily Planner 2017/18 in Blue</p>
+              </a>
+            </div>
+            <div class=" prod " >
+              <a class="prod--a" href="product.html">
+                <p id="price">USD $10.00</p>
+                <img src="images/prod-06.jpg" alt="" />
+                <p id="prod-desc">Daily Planner 2019 in Brown</p>
+              </a>
+            </div>
+            <div class=" prod " >
+              <a class="prod--a"  href="product.html">
+                <p id="price">USD $25.00</p>
+                <img src="images/prod-07.jpg" alt="" />
+                <p id="prod-desc">Daily Planner 2017 in Dark Brown</p>
+              </a>
+            </div>
+          </div>
+      </div>
+
+      <!-- PRODUCT LIST ENDS -->
+
+      <!-- BANNER SECTION STARTS -->
+
+      <div class="row prod-sec">
+        <div style="overflow: hidden;" class="col-lg-6 prod-img">
+          <img class="boost-img" loading="lazy" src="images/single-prod.jpg" alt="" />
+        </div>
+
+        <div class="col-lg-4 prod-desc">
+          <br /><br />
+          <p class="wow fadeInUp" data-wow-delay="0.5s">
+            The way to get started is to quit talking and begin doing. Get
+            started with our tools and boost your productivity.
+          </p>
+
+          <div class="link wow fadeInUp" data-wow-delay="0.6s">
+            <a href="shop.html"
+              >shop now <ion-icon name="arrow-round-forward"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- BANNER SECTION ENDS -->
+
+      <!-- CATEGORIES SECTION STARTS -->
+
+      <div class="container-fluid">
+        <div class="row section shop">
+          <div class="col-lg-8">
+            <p class="text-shop" data-wow-delay="0.4s">
+              Do not wait; the time will never be right. Start where you stand,
+              and work with whatever tools you may have at your command, and
+              better tools will be found as you go along.
+            </p>
+
+            <div class="link">
+              <a class="learnmore__link" href="shop.html"
+                >learn more <ion-icon name="arrow-round-forward"></ion-icon
+              ></a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="inner-card-slider">    
+        <div class="card">
+          <img src="images/prod-01.jpg" alt="" />
+          <p id="card-count">
+          01
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="images/prod-02.jpg" alt="" />
+          <p id="card-count">
+           02
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="images/prod-03.jpg" alt="" />
+          <p id="card-count">
+           03
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/rich-smith-i-ut6Z7qOnc-unsplash.jpg" alt="" />
+          <p id="card-count">
+           04
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/pure-julia-wXK21EwlhwI-unsplash.jpg" alt="" />
+          <p id="card-count">
+           05
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/marc-schaefer-J4bugcA2Vwg-unsplash.jpg" alt="" />
+          <p id="card-count">
+           06
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/pexels-madison-inouye-1937337.jpg" alt="" />
+          <p id="card-count">
+           07
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/pexels-karolina-grabowska-4210785.jpg" alt="" />
+          <p id="card-count">
+           08
+          </p>
+        </div>
+        <div class="card">
+          <img src="images/prophsee-journals--jDNrq40idE-unsplash.jpg" alt="" />
+          <p id="card-count">
+           09
+          </p>
+        </div>
+      </div>
+      </div>
+      <!-- CATEGORIES SECTION ENDS -->
+
+      <br /><br /><br />
+      
+      <div class="container-fluid footer">
+        <div class="section container">
+          <footer>
+            <div class="row">
+              <div class="col-lg-3 block">
+                <p>
+                  Wordoutlet, 3581 Lunneta Street,
+                  <br />
+                  Siesta Key, Florida. 20002,
+                  <br />
+                  USA
+                </p>
+              </div>
+              <div class="col-lg-3 block">
+                <p>
+                  FAQs
+                  <br />
+                  Return Policy
+                  <br />
+                  Shipping
+                </p>
+              </div>
+              <div class="col-lg-3 block">
+                <p>
+                  Careers
+                  <br />
+                  Community
+                  <br />
+                  Wholesale
+                </p>
+              </div>
+              <div class="col-lg-3 block">
+                <div class="media">
+                  <ul>
+                    <li><ion-icon  class="icon" name="logo-facebook"></ion-icon></li>
+                    <li><ion-icon class="icon" name="logo-instagram"></ion-icon></li>
+                    <li><ion-icon class="icon" name="logo-twitter"></ion-icon></li>
+                    <li><ion-icon class="icon" name="logo-pinterest"></ion-icon></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </main>
+    <div class="slider"></div>
+      <!-- FOOTER STARTS -->
+
+
+      <!-- FOOTER ENDS -->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js" integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
